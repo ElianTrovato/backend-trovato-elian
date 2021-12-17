@@ -1,0 +1,1 @@
+[{"producto":"Escuadra","precio":123.45,"id":1},{"producto":"Calculadora","precio":234.56,"id":2},{"producto":"Globo Terráqueo","precio":345.67,"id":3},{"productos":{"producto":"lapiz de prueba","precio":27},"id":4},{"producto":"lapiz de prueba","precio":27,"id":5}]

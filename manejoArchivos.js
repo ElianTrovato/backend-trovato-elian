@@ -105,7 +105,7 @@ class Contenedor{
     }
 
     deleteAll() {    
-        fs.writeFile("./productos.txt", JSON.stringify([]), error =>{
+        fs.writeFile("./productos.txt", JSON.stringify({ }), error =>{
             if(error){
                 console.log("No se cargó el archivo");
             } else {
@@ -123,8 +123,8 @@ const contents = new Contenedor (
                 }
 )
 
-contents.save(contents.productos);
-contents.getAll();
 contents.getById(1);
-contents.deleteById(7);
-contents.deleteAll();
+//contents.save(contents.productos);
+//contents.getAll();
+//contents.deleteById(7);
+//contents.deleteAll();
