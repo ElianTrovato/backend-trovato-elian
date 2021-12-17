@@ -105,7 +105,7 @@ class Contenedor{
     }
 
     deleteAll() {    
-        fs.writeFile("./productos.txt", JSON.stringify({ }), error =>{
+        fs.writeFile("./productos.txt", JSON.stringify("se eliminaron todos los archivos"), error =>{
             if(error){
                 console.log("No se cargó el archivo");
             } else {
@@ -113,6 +113,7 @@ class Contenedor{
                 //return nuevaPosicion;
             }
         })   
+        console.log("Se eliminaron todos los archivos")
     }
 }
 
