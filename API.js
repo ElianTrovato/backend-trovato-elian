@@ -31,6 +31,11 @@ var productos = [{
     thumbnail: "https://th.bing.com/th/id/R.2844c44919508670153c6ed4b689081b?rik=mL7Zt3r%2f0JeCtg&pid=ImgRaw&r=0"
 },
 ]
+productoAgregado = {
+    title: "Carpeta",
+    price: 375,
+    thumbnail: "https://www.vivian.com.gt/tienda/wp-content/uploads/2020/08/CUADERNOS-COSIDOS-CON-LINEAS-450x450.png"
+}
 
 app.get('/api/productos', function(req, res, ){
     res.send(productos)
@@ -45,14 +50,14 @@ app.get('/api/productos/:id',(req, res) => {
 });
 
 app.post('/api/productos', function(req, res, ){
-
+    res.send(productoAgregado);
 });
 
 app.delete('/api/productos:id', function(req, res, ){
 
 });
 
-const server = app.listen(8080, () =>{
+const server = app.listen(0, () =>{
     console.log(`Escuchando en puerto ${server.address().port}`)
 });
 server.on("error", error => console.log(`Error en servidor ${error}`))
